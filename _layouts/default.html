@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> {% if page.title %} {{ page.title }} @ {% endif %} datntz</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Global CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-markdown/2.10.0/css/bootstrap-markdown.min.css"
+        integrity="sha256-umMZCcE/LUcJ3F3V/D6NmvQxdm3OWtRMiMApkNnDIOw=" crossorigin="anonymous" />
+
+    <!-- Plugins CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.4/themes/prism.min.css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/assets/css/default.css"> {% if page.type =="post" %}{{ page.styles }}{% endif %}
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+         <![endif]-->
+
+</head>
+
+<body class="{% if page.home %}home blog logged-in{% endif %} {{ page.type }} {%if page.body-name%}{{ page.body-name }}{% endif %}">
+    <div class="row" style="display: block; background-color: #f5f5f5; padding: 0; margin: 0;">
+        <!-- ******HEADER****** -->
+        <nav class="navbar default-header navbar-fixed-left">
+            <div class="container">
+                {% include header.html %}
+            </div>
+        </nav>
+
+        <section style="padding: 0;">
+            <!-- ******CONTAINER****** -->
+            <div class="default-container">
+                {{ content }}
+                <div style="clear:both"></div>
+            </div>
+
+            <!-- ******FOOTER****** -->
+            <footer class="default-footer" id="p-getintouch">
+                {% include footer.html %}
+            </footer>
+
+        </section>
+    </div>
+
+    <!-- ******SCRIPT****** -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-markdown/2.10.0/js/bootstrap-markdown.min.js" integrity="sha256-vT9X0tmmfKfNTg0U/Iv0rM9mhu8LA0MaDFrzIflHN9A="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.4/prism.min.js"></script> 
+    {% if page.url == "/index.html" %}
+    <script src="/assets/js/functions.js"></script> {% endif %}
+    
+</body>
+
+</html>

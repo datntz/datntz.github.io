@@ -1,0 +1,91 @@
+.about-section-me{
+    min-height: 100vh;
+    background-color: #555;
+
+    .avarta{
+       height: 500px;
+
+       .outer-frame {
+           width: 290px;
+           height: 390px;
+           padding: 10px;
+           background-color: #f9f9f9;
+           float: right;
+
+            .inner-frame{
+                width: 270px;
+                height: 370px;
+                overflow: hidden;
+
+                img
+                {
+                    margin-top: -60px;
+                    width: 270px;
+                }
+            }
+        }
+    }
+
+    .personal{
+        margin-top: -200px; 
+        min-height: 300px; 
+        background-color: #ccc;
+    }
+
+    p{
+        margin: 0;
+        padding: 0;
+        color: #f9f9f9;
+    }
+
+    p.full-name{
+        font-weight: 600;
+        font-size: 2.5em;
+        color: #fff!important;
+    }
+
+    p.title{
+        font-weight: bold;
+        font-size: 21px;
+    }
+
+    p.location, p.subject{
+        font-size: 16px;
+        text-transform: uppercase;
+        opacity: 0.9;
+    }
+
+    p.previous{
+        font-weight: 200;
+        font-size: 16px;
+        text-transform: uppercase;
+        opacity: 0.9;
+    }
+}
+
+.about-section-experience{
+    min-height: 100vh;
+    background-color: #fdfdfd;
+}
+
+.about-section-education{
+    min-height: 100vh;
+}
+
+.about-section-skill{
+    min-height: 50vh;
+    background-color: #fdfdfd;
+}
+
+.about-section-portfolio{
+    min-height: 50vh;
+}
+
+.about-section-contact{
+    min-height: 50vh;
+    background-color: #fdfdfd;
+}
+
+.about-section-recommendation{
+    min-height: 50vh;
+}

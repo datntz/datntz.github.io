@@ -1,0 +1,98 @@
+.post-section-category{
+    padding: 0;
+
+    .top-bar{
+        background-color: #fdfdfd;
+        min-height: 64px;
+        text-align: right;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 100%;
+
+            li{
+                list-style: none;
+                display: inline;
+                padding: 0 15px;
+                line-height: 64px;
+                
+                a, a:link, a:visited{
+                    font-size: 0.85em;
+                    color: #395563;
+                    font-weight: 600;
+                    text-decoration: none;
+                    padding: 0 5px 5px 5px;
+                    border-bottom: 1px dashed #e9e9e9;
+                }
+
+                a:hover{
+                    border-bottom: 1px solid #395563;
+                }
+            }
+        }
+    }
+}
+
+.post-section-archive{
+    display: block;
+
+    .updated-list{
+        min-height: 100vh;
+        padding: 15px 0 15px 15px;
+
+        .pagged-list{
+            padding: 15px;
+            background-color: #fdfdfd;
+
+            ul{
+                margin: 0;
+                padding: 0;
+    
+                li{
+                    margin: 0 25px;
+                    a, a:link, a:visited{
+                        border-bottom: 1px solid #f9f9f9;
+                        padding: 5px;
+                        display: block;
+                        text-decoration: none;
+                        color: #a1a1a1;
+                        font-size: 0.95em;
+                    }
+    
+                    a:hover{
+                        color: #555;
+                        border-bottom: 1px solid #555;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .fixed-list{
+        display: block;
+
+        h4{
+            border-left: 4px solid rgb(57, 85, 99);
+            font-size: 1em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: rgb(57, 85, 99);
+            padding: 3px 0 3px 10px;
+        }
+
+        .block{
+            min-height: 400px; 
+            background-color: #fff; 
+            padding: 15px;
+            margin-top: 15px;
+            display: block;
+
+            img{
+                width: 254px;
+            }
+        }
+    }
+}

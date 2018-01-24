@@ -1,0 +1,8 @@
+<h4>Tags</h4>
+<div class="col-sm-12">
+  <div class="seris-expo-list">
+    {% for seri in site.categories %}
+    <a href="#{{ seri[0] | slugify }}" class="post-tag">{{ seri[0] }}</a> &nbsp;&nbsp;&nbsp;
+    {% endfor %}
+  </div>
+</div>
